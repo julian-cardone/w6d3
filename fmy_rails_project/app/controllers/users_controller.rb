@@ -24,4 +24,9 @@ class UsersController < ApplicationController
     render json: user_update
   end
 
+  def destroy
+    user_destroy = CreateUsers.destroy(params[:id])
+    render json: user_destroy
+  end
+
 end
