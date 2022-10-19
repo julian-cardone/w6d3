@@ -332,3 +332,22 @@ Processing by UsersController#show as */*
 Completed 200 OK in 27ms (Views: 1.4ms | ActiveRecord: 7.8ms | Allocations: 7000)
 
 
+Started PATCH "/users?id=1&name=Bob&email=Bob@gmail.com" for ::1 at 2022-10-19 15:42:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started PATCH "/users/1/?name=Bob&email=Bob@gmail.com" for ::1 at 2022-10-19 15:43:08 -0400
+Processing by UsersController#update as */*
+  Parameters: {"name"=>"Bob", "email"=>"Bob@gmail.com", "id"=>"1"}
+  [1m[36mCreateUsers Load (0.7ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mCreateUsers Update (2.2ms)[0m  [1m[33mUPDATE "create_users" SET "name" = $1, "email" = $2, "updated_at" = $3 WHERE "create_users"."id" = $4[0m  [["name", "Bob"], ["email", "Bob@gmail.com"], ["updated_at", "2022-10-19 19:43:08.414244"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (21.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+Completed 200 OK in 69ms (Views: 1.3ms | ActiveRecord: 34.4ms | Allocations: 9469)
+
+

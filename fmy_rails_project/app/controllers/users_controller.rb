@@ -19,4 +19,9 @@ class UsersController < ApplicationController
     render json: user
   end
 
+  def update
+    user_update = CreateUsers.update(params[:id], :name => params[:name], :email => params[:email])
+    render json: user_update
+  end
+
 end
