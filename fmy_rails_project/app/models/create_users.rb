@@ -9,7 +9,7 @@
 #
 class CreateUsers < ApplicationRecord
     validates :name, :email, presence: true
-
+ 
     has_many :artworks,
         primary_key: :id,
         foreign_key: :artist_id,
