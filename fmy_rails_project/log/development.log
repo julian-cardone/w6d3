@@ -131,3 +131,86 @@ Processing by UsersController#index as */*
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 661)
 
 
+Started GET "/users" for ::1 at 2022-10-19 14:49:20 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1942)
+
+
+  
+NameError (uninitialized constant UsersController::User
+
+    @users = User.all
+             ^^^^):
+  
+app/controllers/users_controller.rb:4:in `index'
+Started GET "/users" for ::1 at 2022-10-19 14:49:41 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1832)
+
+
+  
+NameError (uninitialized constant UsersController::Users
+
+    @users = Users.all
+             ^^^^^):
+  
+app/controllers/users_controller.rb:4:in `index'
+Started GET "/users?fox=two" for ::1 at 2022-10-19 14:51:36 -0400
+Processing by UsersController#index as */*
+  Parameters: {"fox"=>"two"}
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/users?User(fox)=two" for ::1 at 2022-10-19 14:52:33 -0400
+Processing by UsersController#index as */*
+  Parameters: {"User(fox)"=>"two"}
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 109)
+
+
+Started GET "/users" for ::1 at 2022-10-19 14:53:27 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
+Started GET "/users?box[dog]=two" for ::1 at 2022-10-19 14:53:30 -0400
+Processing by UsersController#index as */*
+  Parameters: {"box"=>{"dog"=>"two"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/users?box[dog[cat]]=two" for ::1 at 2022-10-19 14:53:47 -0400
+Processing by UsersController#index as */*
+  Parameters: {"box"=>{"dog"=>{"cat"=>"two"}}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 126)
+
+
+Started GET "/users?box[dog[cat]]=[two[one]]" for ::1 at 2022-10-19 14:54:00 -0400
+Processing by UsersController#index as */*
+  Parameters: {"box"=>{"dog"=>{"cat"=>"[two[one]]"}}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 123)
+
+
+Started GET "/users?box[dog[cat]]=two&box[dog]=one" for ::1 at 2022-10-19 14:54:52 -0400
+Processing by UsersController#index as */*
+  Parameters: {"box"=>{"dog"=>"one"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/users?box[dog][cat]=two&box[dog]=one" for ::1 at 2022-10-19 14:55:10 -0400
+Processing by UsersController#index as */*
+  Parameters: {"box"=>{"dog"=>"one"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 116)
+
+
+Started GET "/users?box[dog][cat]=two" for ::1 at 2022-10-19 14:55:13 -0400
+Processing by UsersController#index as */*
+  Parameters: {"box"=>{"dog"=>{"cat"=>"two"}}}
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 123)
+
+
+Started GET "/users?box[dog][cat]=two&box[blue]=one" for ::1 at 2022-10-19 14:55:53 -0400
+Processing by UsersController#index as */*
+  Parameters: {"box"=>{"dog"=>{"cat"=>"two"}, "blue"=>"one"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
