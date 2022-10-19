@@ -74,3 +74,60 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2797)
 
 
+Started GET "/users" for ::1 at 2022-10-19 14:42:42 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  UsersControllers
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/users" for ::1 at 2022-10-19 14:43:08 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  UsersControllers
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/users" for ::1 at 2022-10-19 14:43:20 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  UsersControllers
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/users" for ::1 at 2022-10-19 14:44:06 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  UsersControllers
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/users" for ::1 at 2022-10-19 14:45:07 -0400
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/users" for ::1 at 2022-10-19 14:45:51 -0400
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 9)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 661)
+
+
