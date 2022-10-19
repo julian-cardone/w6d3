@@ -31,4 +31,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_19_210213) do
   end
 
   add_foreign_key "artworks", "create_users", column: "artist_id"
-end 
+end
