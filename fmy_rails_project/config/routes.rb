@@ -10,7 +10,14 @@ Rails.application.routes.draw do
 
   resources :users, only: [:create, :destroy, :index, :show, :update] do
     resources :artworks, only: [:create, :destroy, :index, :show, :update]
+    
   end
+
+  resources :users, :artworks, only: [:create, :destroy, :index, :show, :update] do
+    resources :comments, only: [:create, :destroy, :index, :show, :update]
+  end
+
+
 
   # get '/users', to: 'users#index'
   # post '/users', to: 'users#create'
