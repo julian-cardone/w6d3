@@ -1794,3 +1794,343 @@ Processing by ArtworksController#index as */*
 Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 737)
 
 
+  [1m[36mCreateUsers Load (0.6ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.7ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.9ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" INNER JOIN "artwork_shares" ON "artworks"."id" = "artwork_shares"."artwork_id" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 1]]
+  [1m[36mCreateUsers Load (0.9ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.9ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" INNER JOIN "artwork_shares" ON "artworks"."id" = "artwork_shares"."artwork_id" WHERE "artwork_shares"."viewer_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["viewer_id", 1], ["LIMIT", 11]]
+  [1m[36mArtwork Load (2.9ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" INNER JOIN "artwork_shares" ON "artworks"."id" = "artwork_shares"."artwork_id" WHERE "artwork_shares"."viewer_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["viewer_id", 1], ["LIMIT", 11]]
+  [1m[36mCreateUsers Load (1.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (2.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" INNER JOIN "artwork_shares" ON "artworks"."id" = "artwork_shares"."artwork_id" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.4ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.0ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtworkShare Load (0.5ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares" WHERE "artwork_shares"."artwork_id" = $1[0m  [["artwork_id", 2]]
+  [1m[36mArtwork Load (1.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.7ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" INNER JOIN "artwork_shares" ON "create_users"."id" = "artwork_shares"."viewer_id" WHERE "artwork_shares"."artwork_id" = $1[0m  [["artwork_id", 2]]
+  [1m[36mArtwork Load (1.1ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (27.3ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" INNER JOIN "artwork_shares" ON "create_users"."id" = "artwork_shares"."viewer_id" WHERE "artwork_shares"."artwork_id" = $1[0m  [["artwork_id", 2]]
+  [1m[36mCreateUsers Load (1.3ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.1ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mArtwork Load (1.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (2.0ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.5ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (2.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (5.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.1ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (1.9ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mArtwork Load (1.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.8ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (2.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (2.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mCreateUsers Load (2.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.7ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mCreateUsers Load (0.7ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.5ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mCreateUsers Load (1.0ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.3ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.1ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.6ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.4ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.1ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCreateUsers Load (1.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mCreateUsers Load (2.3ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mArtworkShare Load (0.8ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 1]]
+  [1m[36mArtwork Load (0.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" INNER JOIN "artwork_shares" ON "artworks"."id" = "artwork_shares"."artwork_id" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 1]]
+  [1m[36mArtwork Load (1.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.7ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (0.9ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (2.7ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.5ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (1.1ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (1.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.7ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" ORDER BY "create_users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.0ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8193418225469948520)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20221020191718)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (41.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" text NOT NULL, "author_id" bigint NOT NULL, "artwork_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (16.1ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_cd464612c2"
+FOREIGN KEY ("artwork_id")
+  REFERENCES "artworks" ("id")
+[0m
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_f44b1e3c8a"
+FOREIGN KEY ("author_id")
+  REFERENCES "createusers" ("id")
+[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8193418225469948520)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8193418225469948520)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20221020191718)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" text NOT NULL, "author_id" bigint NOT NULL, "artwork_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_cd464612c2"
+FOREIGN KEY ("artwork_id")
+  REFERENCES "artworks" ("id")
+[0m
+  [1m[35m (8.3ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_f44b1e3c8a"
+FOREIGN KEY ("author_id")
+  REFERENCES "create_users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221020191718"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(8193418225469948520)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (2.5ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:21.554114"], ["updated_at", "2022-10-20 19:34:21.554114"], ["username", "Kyle01"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (0.6ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:21.562119"], ["updated_at", "2022-10-20 19:34:21.562119"], ["username", "Tyler02"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (0.5ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:21.571792"], ["updated_at", "2022-10-20 19:34:21.571792"], ["username", "Bobby409"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (0.4ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:21.579053"], ["updated_at", "2022-10-20 19:34:21.579053"], ["username", "Cupp2003"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Create (2.7ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mona Lisa"], ["image_url", "www.monalisa.com"], ["artist_id", 1], ["created_at", "2022-10-20 19:34:21.623444"], ["updated_at", "2022-10-20 19:34:21.623444"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (44.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "fmy_rails_project_development"[0m
+  [1m[35m (39.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "fmy_rails_project_test"[0m
+  [1m[35m (323.4ms)[0m  [1m[35mCREATE DATABASE "fmy_rails_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (125.1ms)[0m  [1m[35mCREATE DATABASE "fmy_rails_project_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "artwork_shares" CASCADE[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "artwork_shares" ("id" bigserial primary key, "artwork_id" bigint NOT NULL, "viewer_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artwork_shares_on_artwork_id_and_viewer_id" ON "artwork_shares" ("artwork_id", "viewer_id")[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE INDEX "index_artwork_shares_on_artwork_id" ON "artwork_shares" ("artwork_id")[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE INDEX "index_artwork_shares_on_viewer_id" ON "artwork_shares" ("viewer_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "artworks" CASCADE[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" bigserial primary key, "title" character varying NOT NULL, "image_url" character varying NOT NULL, "artist_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artworks_on_artist_id_and_title" ON "artworks" ("artist_id", "title")[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE INDEX "index_artworks_on_artist_id" ON "artworks" ("artist_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments" CASCADE[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" text NOT NULL, "author_id" bigint NOT NULL, "artwork_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "create_users" CASCADE[0m
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "create_users" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "username" character varying NOT NULL)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mALTER TABLE "artwork_shares" ADD CONSTRAINT "fk_rails_f5efbe8cf6"
+FOREIGN KEY ("artwork_id")
+  REFERENCES "artworks" ("id")
+[0m
+  [1m[35m (7.4ms)[0m  [1m[35mALTER TABLE "artwork_shares" ADD CONSTRAINT "fk_rails_abdcd9d49f"
+FOREIGN KEY ("viewer_id")
+  REFERENCES "create_users" ("id")
+[0m
+  [1m[35m (5.1ms)[0m  [1m[35mALTER TABLE "artworks" ADD CONSTRAINT "fk_rails_61f542e710"
+FOREIGN KEY ("artist_id")
+  REFERENCES "create_users" ("id")
+[0m
+  [1m[35m (4.6ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_cd464612c2"
+FOREIGN KEY ("artwork_id")
+  REFERENCES "artworks" ("id")
+[0m
+  [1m[35m (5.5ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_f44b1e3c8a"
+FOREIGN KEY ("author_id")
+  REFERENCES "create_users" ("id")
+[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221020191718)[0m
+  [1m[35m (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221019190603),
+(20221019202121),
+(20221019202658),
+(20221019203305),
+(20221019203403),
+(20221019210213),
+(20221020142724);
+
+[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-10-20 19:34:36.419468"], ["updated_at", "2022-10-20 19:34:36.419468"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "33607ae6e6099f90a7e0c687c50ed9ec63552e17"], ["created_at", "2022-10-20 19:34:36.443709"], ["updated_at", "2022-10-20 19:34:36.443709"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "artwork_shares" CASCADE[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCREATE TABLE "artwork_shares" ("id" bigserial primary key, "artwork_id" bigint NOT NULL, "viewer_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (30.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artwork_shares_on_artwork_id_and_viewer_id" ON "artwork_shares" ("artwork_id", "viewer_id")[0m
+  [1m[35m (18.2ms)[0m  [1m[35mCREATE INDEX "index_artwork_shares_on_artwork_id" ON "artwork_shares" ("artwork_id")[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE INDEX "index_artwork_shares_on_viewer_id" ON "artwork_shares" ("viewer_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "artworks" CASCADE[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" bigserial primary key, "title" character varying NOT NULL, "image_url" character varying NOT NULL, "artist_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artworks_on_artist_id_and_title" ON "artworks" ("artist_id", "title")[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE INDEX "index_artworks_on_artist_id" ON "artworks" ("artist_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments" CASCADE[0m
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" text NOT NULL, "author_id" bigint NOT NULL, "artwork_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "create_users" CASCADE[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "create_users" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "username" character varying NOT NULL)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mALTER TABLE "artwork_shares" ADD CONSTRAINT "fk_rails_f5efbe8cf6"
+FOREIGN KEY ("artwork_id")
+  REFERENCES "artworks" ("id")
+[0m
+  [1m[35m (5.0ms)[0m  [1m[35mALTER TABLE "artwork_shares" ADD CONSTRAINT "fk_rails_abdcd9d49f"
+FOREIGN KEY ("viewer_id")
+  REFERENCES "create_users" ("id")
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mALTER TABLE "artworks" ADD CONSTRAINT "fk_rails_61f542e710"
+FOREIGN KEY ("artist_id")
+  REFERENCES "create_users" ("id")
+[0m
+  [1m[35m (4.4ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_cd464612c2"
+FOREIGN KEY ("artwork_id")
+  REFERENCES "artworks" ("id")
+[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_f44b1e3c8a"
+FOREIGN KEY ("author_id")
+  REFERENCES "create_users" ("id")
+[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221020191718)[0m
+  [1m[35m (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221019190603),
+(20221019202121),
+(20221019202658),
+(20221019203305),
+(20221019203403),
+(20221019210213),
+(20221020142724);
+
+[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-10-20 19:34:36.782663"], ["updated_at", "2022-10-20 19:34:36.782663"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2022-10-20 19:34:36.801199"], ["key", "environment"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "33607ae6e6099f90a7e0c687c50ed9ec63552e17"], ["created_at", "2022-10-20 19:34:36.813319"], ["updated_at", "2022-10-20 19:34:36.813319"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (1.1ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:36.909747"], ["updated_at", "2022-10-20 19:34:36.909747"], ["username", "Kyle01"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (0.4ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:36.918242"], ["updated_at", "2022-10-20 19:34:36.918242"], ["username", "Tyler02"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (0.4ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:36.925785"], ["updated_at", "2022-10-20 19:34:36.925785"], ["username", "Bobby409"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Create (0.4ms)[0m  [1m[32mINSERT INTO "create_users" ("created_at", "updated_at", "username") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-10-20 19:34:36.932603"], ["updated_at", "2022-10-20 19:34:36.932603"], ["username", "Cupp2003"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Create (1.9ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mona Lisa"], ["image_url", "www.monalisa.com"], ["artist_id", 1], ["created_at", "2022-10-20 19:34:36.972763"], ["updated_at", "2022-10-20 19:34:36.972763"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.3ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Create (0.6ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Claire"], ["image_url", "www.claire.com"], ["artist_id", 2], ["created_at", "2022-10-20 19:34:36.983575"], ["updated_at", "2022-10-20 19:34:36.983575"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Create (1.0ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Dog"], ["image_url", "www.dogg2.com"], ["artist_id", 2], ["created_at", "2022-10-20 19:34:36.995456"], ["updated_at", "2022-10-20 19:34:36.995456"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.4ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtwork Create (0.6ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Cat is cool"], ["image_url", "www.cat2344.com"], ["artist_id", 3], ["created_at", "2022-10-20 19:34:37.006428"], ["updated_at", "2022-10-20 19:34:37.006428"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.4ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtworkShare Create (1.7ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 1], ["viewer_id", 2], ["created_at", "2022-10-20 19:34:37.031492"], ["updated_at", "2022-10-20 19:34:37.031492"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.6ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtworkShare Create (1.0ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 1], ["viewer_id", 3], ["created_at", "2022-10-20 19:34:37.045377"], ["updated_at", "2022-10-20 19:34:37.045377"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArtworkShare Create (0.7ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 1], ["viewer_id", 4], ["created_at", "2022-10-20 19:34:37.059212"], ["updated_at", "2022-10-20 19:34:37.059212"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtworkShare Create (0.8ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 2], ["viewer_id", 3], ["created_at", "2022-10-20 19:34:37.069499"], ["updated_at", "2022-10-20 19:34:37.069499"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArtworkShare Create (0.7ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 2], ["viewer_id", 4], ["created_at", "2022-10-20 19:34:37.081023"], ["updated_at", "2022-10-20 19:34:37.081023"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Create (2.3ms)[0m  [1m[32mINSERT INTO "comments" ("body", "author_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Very nice painting!"], ["author_id", 4], ["artwork_id", 3], ["created_at", "2022-10-20 19:34:37.113532"], ["updated_at", "2022-10-20 19:34:37.113532"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.3ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("body", "author_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "bad painting!"], ["author_id", 2], ["artwork_id", 3], ["created_at", "2022-10-20 19:34:37.128581"], ["updated_at", "2022-10-20 19:34:37.128581"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("body", "author_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "meh painting!"], ["author_id", 1], ["artwork_id", 3], ["created_at", "2022-10-20 19:34:37.144284"], ["updated_at", "2022-10-20 19:34:37.144284"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("body", "author_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Very cool painting!"], ["author_id", 4], ["artwork_id", 1], ["created_at", "2022-10-20 19:34:37.156748"], ["updated_at", "2022-10-20 19:34:37.156748"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.3ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("body", "author_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "nice painting!"], ["author_id", 2], ["artwork_id", 1], ["created_at", "2022-10-20 19:34:37.171475"], ["updated_at", "2022-10-20 19:34:37.171475"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCreateUsers Load (0.2ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("body", "author_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "bleh painting!"], ["author_id", 3], ["artwork_id", 1], ["created_at", "2022-10-20 19:34:37.185354"], ["updated_at", "2022-10-20 19:34:37.185354"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCreateUsers Load (1.0ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users"[0m
+  [1m[36mArtwork Load (1.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  [1m[36mArtworkShare Load (1.5ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares"[0m
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCreateUsers Load (0.5ms)[0m  [1m[34mSELECT "create_users".* FROM "create_users" WHERE "create_users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.5ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
